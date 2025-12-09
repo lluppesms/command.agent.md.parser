@@ -1,17 +1,5 @@
-# Command Line Chat Test
+# Agent Markdown Parser
 
-This is an example project that shows how you can call an Azure AI Foundry LLM chat from a console app.  This give a super easy way to see how you can use these resources in just about any program.
+This is a quick example of how you could define all of your agents and prompts in a markdown file. The `##` level markdown statements are used to define an agent, and the `###` markdown statements are used to define prompts for that agent. Once the file is parsed, you can use several different functions to get agent and prompt information.
 
-## Setup
-
-Create an Model Deployment in your Azure AI Foundry, then add these three keys to your appSettings.json or your User Secrets, then run the application:
-
-``` bash
-{
-	"Foundry": {
-		"ProjectEndpoint": "https://xxxxxx.services.ai.azure.com/api/projects/lll-oai-service-project",
-		"ApiKey": "xxxxx",
-		"DeploymentName": "gpt-4o",
-	}
-}
-```
+Check out [Agents.md](./src/Resources/Agents.md) for an example of what the markdown file might look like.
